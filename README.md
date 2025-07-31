@@ -1,7 +1,7 @@
 # Book-store
-Online Book store API Documentation
+#Online Book store API Documentation
 
-Online Bookstore RESTful API Documentation
+**Online Bookstore RESTful API Documentation**
 Version: 1.0
 Base URL: https://api.onlinebookstore.com/v1
 Format: JSON
@@ -9,12 +9,12 @@ Authentication: None (for assignment purposes)
 Overview
 This RESTful API allows developers to manage a collection of books in an online bookstore. The API supports standard CRUD operations: Create, Read, Update, and Delete.
 Endpoints
-1. GET /books
+**1. GET /books**
 URL: /books
 Method: GET
 Response: 200 OK
 Sample Response:
-  {
+<sub>{
     "id": 1,
     "title": "The Pragmatic Programmer",
     "author": "Andrew Hunt",
@@ -27,9 +27,9 @@ Sample Response:
     "author": "Robert C. Martin",
     "price": 37.50,
     "isbn": "978-0132350884"
-  }
+  }</sub>
 
-2. GET /books/{id}
+**2. GET /books/{id}**
 URL: /books/{id}
 Method: GET
 Path Parameter:
