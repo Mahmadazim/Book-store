@@ -1,9 +1,9 @@
 # Book-store
 
-**Online Bookstore RESTful API Documentation**<br>
+**Online Bookstore By using RESTful API Documentation**<br>
 Version: 1.0<br>
 Base URL: https://api.onlinebookstore.com/v1<br>
-Format: JSON<br>
+Format : JSON<br>
 Authentication: None (for assignment purposes)<br>
 Overview<br>
 This RESTful API allows developers to manage a collection of books in an online bookstore. The API supports standard CRUD operations: Create, Read, Update, and Delete.<br>
