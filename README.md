@@ -8,82 +8,91 @@ Authentication: None (for assignment purposes)<br>
 Overview<br>
 This RESTful API allows developers to manage a collection of books in an online bookstore. The API supports standard CRUD operations: Create, Read, Update, and Delete.<br>
 Endpoints<br>
+
 **1. GET /books**<br>
+
 URL: /books<br>
 Method: GET<br>
 Response: 200 OK<br>
 **Sample Response**<br>
-<sub><br>
+<br>
 {<br>
-    "id": 1,
-    "title": "The Pragmatic Programmer",
-    "author": "Andrew Hunt",
-    "price": 42.99,
-    "isbn": "978-0201616224"
-  },
-  {
-    "id": 2,
-    "title": "Clean Code",
-    "author": "Robert C. Martin",
-    "price": 37.50,
-    "isbn": "978-0132350884"
-  }</sub>
+    "id": 1,<br>
+    "title": "The Pragmatic Programmer",<br>
+    "author": "Andrew Hunt",<br>
+    "price": 42.99,<br>
+    "isbn": "978-0201616224"<br>
+  },<br>
+  {<br>
+    "id": 2,<br>
+    "title": "Clean Code",<br>
+    "author": "Robert C. Martin",<br>
+    "price": 37.50,<br>
+    "isbn": "978-0132350884"<br>
+  }<br>
 
-**2. GET /books/{id}**
-URL: /books/{id}
-Method: GET
-Path Parameter:
-id (integer) – Unique ID of the book
-Response: 200 OK or 404 Not Found
-Sample Response:
-{
-  "id": 1,
-  "title": "The Pragmatic Programmer",
-  "author": "Andrew Hunt",
-  "price": 42.99,
-  "isbn": "978-0201616224"
-}
-3. POST /books
-URL: /books
-Method: POST
-Request Body Example:
-Response: 201 Created
-Sample Response:
-{
-  "title": "Refactoring",
-  "author": "Martin Fowler",
-  "price": 49.99,
-  "isbn": "978-0201485677"
-}
-Response: 201 Created
-{
-  "message": "Book added successfully.",
-  "id": 3
-}
-4. PUT /books/{id}
-URL: /books/{id}
-Method: PUT
-Path Parameter:
-id (integer) – ID of the book to update
-Request Body Example:
-{
-  "title": "Refactoring (2nd Edition)",
-  "author": "Martin Fowler",
-  "price": 55.00,
-  "isbn": "978-0134757599"
-}
-Response: 200 OK
-Sample Response:
-{
-  "message": "Book updated successfully."
-}
-5. DELETE /books/{id}
-URL: /books/{id}
-Method: DELETE
-Path Parameter:
-id (integer) – ID of the book to delete
-Response: 200 OK or 404 Not Found
-Sample Response: 
-{
-  "message": "Book deleted successfully."
-}
+**2. GET /books/{id}**<br>
+
+URL: /books/{id}<br>
+Method: GET<br>
+Path Parameter:<br>
+id (integer) – Unique ID of the book<br>
+Response: 200 OK or 404 Not Found<br>
+**Sample Response**<br>
+{<br>
+  "id": 1,<br>
+  "title": "The Pragmatic Programmer",<br>
+  "author": "Andrew Hunt",<br>
+  "price": 42.99,<br>
+  "isbn": "978-0201616224"<br>
+}<br>
+
+**3. POST /books**<br>
+
+URL: /books<br>
+Method: POST<br>
+Request Body Example:<br>
+Response: 201 Created<br>
+**Sample Response**<br>
+{<br>
+  "title": "Refactoring",<br>
+  "author": "Martin Fowler",<br>
+  "price": 49.99,<br>
+  "isbn": "978-0201485677"<br>
+}<br>
+Response: 201 Created<br>
+{<br>
+  "message": "Book added successfully.",<br>
+  "id": 3<br>
+}<br>
+
+**4. PUT /books/{id}**<br>
+
+URL: /books/{id}<br>
+Method: PUT<br>
+Path Parameter:<br>
+id (integer) – ID of the book to update<br>
+Request Body Example:<br>
+{<br>
+  "title": "Refactoring (2nd Edition)",<br>
+  "author": "Martin Fowler",<br>
+  "price": 55.00,<br>
+  "isbn": "978-0134757599"<br>
+}<br>
+Response: 200 OK<br>
+Sample Response:<br>
+{<br>
+  "message": "Book updated successfully."<br>
+}<br>
+
+**5. DELETE /books/{id}**<br>
+
+URL: /books/{id}<br>
+Method: DELETE<br>
+Path Parameter:<br>
+id (integer) – ID of the book to delete<br>
+Response: 200 OK or 404 Not Found<br>
+**Sample Response**<br>
+{<br>
+  "message": "Book deleted successfully."<br>
+}<br>
