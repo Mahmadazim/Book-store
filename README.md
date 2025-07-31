@@ -1,5 +1,4 @@
 # Book-store
-#Online Book store API Documentation
 
 **Online Bookstore RESTful API Documentation**
 Version: 1.0
@@ -14,7 +13,8 @@ URL: /books
 Method: GET
 Response: 200 OK
 Sample Response:
-<sub>{
+<sub>
+{
     "id": 1,
     "title": "The Pragmatic Programmer",
     "author": "Andrew Hunt",
