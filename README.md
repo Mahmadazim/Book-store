@@ -1,20 +1,20 @@
 # Book-store
 
-**Online Bookstore RESTful API Documentation**
-Version: 1.0
-Base URL: https://api.onlinebookstore.com/v1
-Format: JSON
-Authentication: None (for assignment purposes)
-Overview
-This RESTful API allows developers to manage a collection of books in an online bookstore. The API supports standard CRUD operations: Create, Read, Update, and Delete.
-Endpoints
-**1. GET /books**
-URL: /books
-Method: GET
-Response: 200 OK
-Sample Response:
-<sub>
-{
+**Online Bookstore RESTful API Documentation**<br>
+Version: 1.0<br>
+Base URL: https://api.onlinebookstore.com/v1<br>
+Format: JSON<br>
+Authentication: None (for assignment purposes)<br>
+Overview<br>
+This RESTful API allows developers to manage a collection of books in an online bookstore. The API supports standard CRUD operations: Create, Read, Update, and Delete.<br>
+Endpoints<br>
+**1. GET /books**<br>
+URL: /books<br>
+Method: GET<br>
+Response: 200 OK<br>
+**Sample Response**<br>
+<sub><br>
+{<br>
     "id": 1,
     "title": "The Pragmatic Programmer",
     "author": "Andrew Hunt",
